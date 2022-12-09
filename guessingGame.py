@@ -22,9 +22,9 @@ def play():
     if level == 3:
         total_try = 5
 
-    for round in range(1, total_try + 1):
+    for Round in range(1, total_try + 1):
         print("**********")
-        print("Try {} of {}".format(rodada, total_try))
+        print("Try {} of {}".format(Round, total_try))
         shot = int(input("Enter a number between 1 and 100: "))
 
         if shot < 1 or shot > 100:
@@ -47,7 +47,7 @@ def play():
                 print("You made a mistake, you entered a smaller value!")
             lost_points = abs(secret_number - shot)
             points = points - lost_points
-    print("Game Over! The number was {} and you scored {} points".format(secret_number, points))
+    print("Game Over! The number it was {} and you scored {} points".format(secret_number, points))
 
 
 if __name__ == "__main__":
