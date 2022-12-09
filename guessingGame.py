@@ -22,7 +22,7 @@ def play():
     if level == 3:
         total_try = 5
 
-    for rodada in range(1, total_try + 1):
+    for round in range(1, total_try + 1):
         print("**********")
         print("Try {} of {}".format(rodada, total_try))
         shot = int(input("Enter a number between 1 and 100: "))
